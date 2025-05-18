@@ -1,15 +1,39 @@
-# 🧊 Primer Cubo 3D con Three.js
+# Proyecto 3D con Three.js
 
-Este proyecto es mi primer acercamiento al desarrollo 3D en la web usando [Three.js](https://threejs.org/) y [Vite](https://vitejs.dev/). El objetivo fue crear un cubo básico que rota, renderizado en un canvas WebGL de forma responsiva.
+Este repositorio representa mi progreso en el aprendizaje de gráficos 3D usando [Three.js](https://threejs.org/), una librería poderosa de JavaScript que permite crear experiencias visuales interactivas en el navegador mediante WebGL.
 
-## 🚀 Tecnologías usadas
+## 🎯 Objetivo del proyecto
 
-- [Three.js](https://threejs.org/): Librería para gráficos 3D en el navegador.
-- [Vite](https://vitejs.dev/): Empaquetador rápido para desarrollo moderno en frontend.
-- HTML5 + CSS3 + JavaScript (ESM)
+Explorar los fundamentos del desarrollo 3D con Three.js, incluyendo:
 
-## Demo en vivo
+- Creación y renderizado de escenas.
+- Iluminación y proyección de sombras.
+- Manipulación de geometrías y materiales.
+- Configuración de cámara y animaciones básicas.
 
-Puedes ver el proyecto funcionando en esta URL:
+## 🚀 Tecnologías utilizadas
 
-[Cubo giratorio](https://github.com/Thelmo-SM/three-js-1)
+- **Three.js** (renderizado 3D en WebGL)
+- **JavaScript** (programación base)
+- **HTML/CSS** (estructura y estilos mínimos)
+- **Vite** o entorno local con servidor para pruebas (opcional)
+
+## ✅ Progreso actual
+
+- [x] Escena con fondo transparente (`alpha: true`).
+- [x] Añadida luz direccional que proyecta sombras.
+- [x] Habilitada la proyección y recepción de sombras en geometrías.
+- [x] Cámara con rotación y posición personalizada.
+- [x] Animación básica del cubo (`rotate.x`).
+- [x] Ajuste del plano como superficie receptora de sombras.
+- [x] Adaptación responsive con `window.resize`.
+
+## 🎮 Descripción técnica
+
+```js
+// Cubo animado que proyecta sombra
+const cubo = new THREE.Mesh(
+  new THREE.BoxGeometry(),
+  new THREE.MeshStandardMaterial({ color: 0x00ffff })
+);
+cubo.castShadow = true;

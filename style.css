@@ -4,7 +4,6 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
-  background-color: #000;
 }
 
 canvas {
@@ -15,7 +14,7 @@ canvas {
 
 h1 {
   position: absolute;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   padding: 2rem;
   font-size: 8rem;
   margin: 0;
