@@ -8,3 +8,8 @@ Este proyecto es mi primer acercamiento al desarrollo 3D en la web usando [Three
 - [Vite](https://vitejs.dev/): Empaquetador rápido para desarrollo moderno en frontend.
 - HTML5 + CSS3 + JavaScript (ESM)
 
+## Demo en vivo
+
+Puedes ver el proyecto funcionando en esta URL:
+
+[https://TU_USUARIO.github.io/NOMBRE_REPO/](https://github.com/Thelmo-SM/three-js-1)
